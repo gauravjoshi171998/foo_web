@@ -1,0 +1,60 @@
+img {
+  transition: transform 0.3s ease;
+  width: 100%;
+  object-fit: cover;
+}
+
+img:hover {
+  transform: scale(1.03);
+}
+.heading-text {
+  font-size: 3rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.para-text{
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 50px 20px;
+  }
+
+  .heading-text {
+    font-size: 1.8rem;
+  }
+
+  .para-text {
+    font-size: 0.95rem;
+  }
+
+  .exp-badge {
+    left: 10px !important;
+    bottom: -30px !important;
+    padding: 8px 16px !important;
+    font-size: 0.9rem;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .d-flex.gap-5 {
+    gap: 2rem !important;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+   .adjust-device{
+     flex-direction: column;
+   }
+  .heading-text {
+    font-size: 2rem;
+  }
+  .para-text {
+    font-size: 1.2rem;
+  }
+}

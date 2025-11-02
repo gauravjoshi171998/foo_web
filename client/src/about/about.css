@@ -1,0 +1,25 @@
+p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+img:hover {
+  transform: scale(1.03);
+  transition: 0.3s ease-in-out;
+}
+.image-container{
+ display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-dish{
+  margin: 1rem 0rem;
+  height: 200px;
+  width: 300px;
+ 
+}
+.img-dish img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}

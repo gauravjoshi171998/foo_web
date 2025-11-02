@@ -1,0 +1,109 @@
+.hero-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.text-orange {
+  color: #f97316;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: 700;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.hero-content {
+  width: 60%;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+.btn-orange {
+  background-color: #f97316 !important;
+  border: none !important;
+  color: white !important;
+  transition: 0.3s ease;
+  font-size: 1.2rem;
+  padding: 1.1rem 2rem !important;
+}
+
+.btn-orange:hover {
+  background-color: #e66405 !important;
+}
+
+.btn-outline-custom {
+  border: 2px solid white !important;
+  background: transparent !important;
+  color: white !important;
+  transition: 0.3s ease;
+  font-size: 1.2rem;
+}
+
+.btn-outline-custom:hover {
+  background-color: white !important;
+  color: #f97316 !important;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* ---------- RESPONSIVE STYLES ---------- */
+
+/* Tablet (768px and up) */
+@media (min-width: 768px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+
+  .hero-text {
+    font-size: 1.1rem;
+    width: 80%;
+    margin: 1.5rem auto 2rem;
+  }
+
+  .hero-buttons {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .btn-orange,
+  .btn-outline-custom {
+    width: auto;
+  }
+}
+
+/* Mobile (below 768px) */
+@media (max-width: 767px) {
+  .hero-title {
+    font-size: 2.4rem;
+  }
+
+  .hero-text {
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  .btn-orange,
+  .btn-outline-custom {
+    font-size: 1rem;
+    width: 100%;
+  }
+  .hero-content {
+    width: 100%;
+  }
+}
